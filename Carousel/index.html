@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Carousel</title>
+    <link rel="stylesheet" href="carousel-styles.css">
+</head>
+<body>
+    <div class="carousel-container" tabindex="0" onkeydown="handleKey(event)">
+        <div class="carousel-slide">
+            <img src="images/image1.jpg" alt="Image 1" onerror="this.src='images/fallback.webp';" />
+            <img src="images/image2.jpg" alt="Image 2" onerror="this.src='images/fallback.webp';" />
+            <img src="images/image3.jpg" alt="Image 3" onerror="this.src='images/fallback.webp';" />
+            <!-- Add more images as needed -->
+        </div>
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <!-- Add more dots as needed -->
+        </div>
+    </div>
+
+    <script src="carousel-scripts.js"></script>
+</body>
+</html>
