@@ -11,8 +11,14 @@ body {
 .accordion-container {
     width: 90%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.accordion-item{
+    width: 100%;
+}
 .accordion-header {
     background-color: #3498db;
     color: white;
